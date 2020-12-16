@@ -21,8 +21,8 @@ import java.util.Objects;
 public class Car {
 
   private double accelerationCoefficient;
-  private double currentSpeed;
   private double brakingCoefficient;
+  private double currentSpeed;
   private double topSpeed;
   private String make;
   private String model;
@@ -51,15 +51,27 @@ public class Car {
     this.engine = engine;
   }
 
+  /**
+   * Public Methods
+   **/
+
   public void accelerate() {
     this.currentSpeed += this.accelerationCoefficient;
-    if (this.currentSpeed > this.topSpeed) this.currentSpeed = this.topSpeed;
+    if (this.currentSpeed > this.topSpeed) {
+      this.currentSpeed = this.topSpeed;
+    }
   }
 
   public void brake() {
     this.currentSpeed -= this.brakingCoefficient;
-    if (this.currentSpeed < 0) this.currentSpeed = 0;
+    if (this.currentSpeed < 0) {
+      this.currentSpeed = 0;
+    }
   }
+
+  /**
+   * Getters and Setters
+   **/
 
   public double getAccelerationCoefficient() {
     return accelerationCoefficient;
@@ -132,6 +144,10 @@ public class Car {
   public void setEngine(Engine engine) {
     this.engine = engine;
   }
+
+  /**
+   * Override Methods
+   **/
 
   @Override
   public boolean equals(Object o) {

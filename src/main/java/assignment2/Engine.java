@@ -32,6 +32,10 @@ public class Engine {
     this.model = model;
   }
 
+  /**
+   * Getters and Setters
+   **/
+
   public double getCapacity() {
     return capacity;
   }
@@ -63,6 +67,10 @@ public class Engine {
   public void setModel(String model) {
     this.model = model;
   }
+
+  /**
+   * Override Methods
+   **/
 
   @Override
   public boolean equals(Object o) {
