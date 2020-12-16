@@ -16,8 +16,14 @@
 
 package assignment2;
 
+/**
+ * The type Main.
+ */
 public class Main {
 
+  /**
+   * Instantiates a new Main.
+   */
   public Main() {
     double capacity = 1.0;
     double powerOutput = 100;
@@ -57,6 +63,11 @@ public class Main {
     System.out.println(myCar);
   }
 
+  /**
+   * The entry point of application.
+   *
+   * @param args the input arguments
+   */
   public static void main(String[] args) {
     Main m = new Main();
   }

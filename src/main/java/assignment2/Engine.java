@@ -18,6 +18,9 @@ package assignment2;
 
 import java.util.Objects;
 
+/**
+ * The type Engine.
+ */
 public class Engine {
 
   private double capacity;
@@ -25,6 +28,14 @@ public class Engine {
   private String make;
   private String model;
 
+  /**
+   * Instantiates a new Engine.
+   *
+   * @param capacity    the capacity
+   * @param powerOutput the power output
+   * @param make        the make
+   * @param model       the model
+   */
   public Engine(double capacity, double powerOutput, String make, String model) {
     this.capacity = capacity;
     this.powerOutput = powerOutput;
@@ -34,36 +45,72 @@ public class Engine {
 
   /**
    * Getters and Setters
-   **/
-
+   *
+   * @return the capacity
+   */
   public double getCapacity() {
     return capacity;
   }
 
+  /**
+   * Sets capacity.
+   *
+   * @param capacity the capacity
+   */
   public void setCapacity(double capacity) {
     this.capacity = capacity;
   }
 
+  /**
+   * Gets power output.
+   *
+   * @return the power output
+   */
   public double getPowerOutput() {
     return powerOutput;
   }
 
+  /**
+   * Sets power output.
+   *
+   * @param powerOutput the power output
+   */
   public void setPowerOutput(double powerOutput) {
     this.powerOutput = powerOutput;
   }
 
+  /**
+   * Gets make.
+   *
+   * @return the make
+   */
   public String getMake() {
     return make;
   }
 
+  /**
+   * Sets make.
+   *
+   * @param make the make
+   */
   public void setMake(String make) {
     this.make = make;
   }
 
+  /**
+   * Gets model.
+   *
+   * @return the model
+   */
   public String getModel() {
     return model;
   }
 
+  /**
+   * Sets model.
+   *
+   * @param model the model
+   */
   public void setModel(String model) {
     this.model = model;
   }

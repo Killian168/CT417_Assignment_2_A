@@ -18,6 +18,9 @@ package assignment2;
 
 import java.util.Objects;
 
+/**
+ * The type Car.
+ */
 public class Car {
 
   private double accelerationCoefficient;
@@ -30,6 +33,20 @@ public class Car {
   private int numberOfSeats;
   private Engine engine;
 
+
+  /**
+   * Instantiates a new Car.
+   *
+   * @param accelerationCoefficient the acceleration coefficient
+   * @param currentSpeed            the current speed
+   * @param brakingCoefficient      the braking coefficient
+   * @param topSpeed                the top speed
+   * @param make                    the make
+   * @param model                   the model
+   * @param numberOfDoors           the number of doors
+   * @param numberOfSeats           the number of seats
+   * @param engine                  the engine
+   */
   public Car(
           double accelerationCoefficient,
           double currentSpeed,
@@ -41,8 +58,8 @@ public class Car {
           int numberOfSeats,
           Engine engine) {
     this.accelerationCoefficient = accelerationCoefficient;
-    this.currentSpeed = currentSpeed;
     this.brakingCoefficient = brakingCoefficient;
+    this.currentSpeed = currentSpeed;
     this.topSpeed = topSpeed;
     this.make = make;
     this.model = model;
@@ -55,6 +72,9 @@ public class Car {
    * Public Methods
    **/
 
+  /**
+   * Accelerate the Car
+   */
   public void accelerate() {
     this.currentSpeed += this.accelerationCoefficient;
     if (this.currentSpeed > this.topSpeed) {
@@ -62,6 +82,9 @@ public class Car {
     }
   }
 
+  /**
+   * Brake the Car.
+   */
   public void brake() {
     this.currentSpeed -= this.brakingCoefficient;
     if (this.currentSpeed < 0) {
@@ -71,76 +94,166 @@ public class Car {
 
   /**
    * Getters and Setters
-   **/
+   */
 
+  /**
+   * Gets the acceleration coefficient.
+   *
+   * @return the acceleration coefficient
+   */
   public double getAccelerationCoefficient() {
     return accelerationCoefficient;
   }
 
+  /**
+   * Sets acceleration coefficient.
+   *
+   * @param accelerationCoefficient the acceleration coefficient
+   */
   public void setAccelerationCoefficient(double accelerationCoefficient) {
     this.accelerationCoefficient = accelerationCoefficient;
   }
 
+  /**
+   * Gets current speed.
+   *
+   * @return the current speed
+   */
   public double getCurrentSpeed() {
     return currentSpeed;
   }
 
+  /**
+   * Sets current speed.
+   *
+   * @param currentSpeed the current speed
+   */
   public void setCurrentSpeed(double currentSpeed) {
     this.currentSpeed = currentSpeed;
   }
 
+  /**
+   * Gets braking coefficient.
+   *
+   * @return the braking coefficient
+   */
   public double getBrakingCoefficient() {
     return brakingCoefficient;
   }
 
+  /**
+   * Sets braking coefficient.
+   *
+   * @param brakingCoefficient the braking coefficient
+   */
   public void setBrakingCoefficient(double brakingCoefficient) {
     this.brakingCoefficient = brakingCoefficient;
   }
 
+  /**
+   * Gets top speed.
+   *
+   * @return the top speed
+   */
   public double getTopSpeed() {
     return topSpeed;
   }
 
+  /**
+   * Sets top speed.
+   *
+   * @param topSpeed the top speed
+   */
   public void setTopSpeed(double topSpeed) {
     this.topSpeed = topSpeed;
   }
 
+  /**
+   * Gets make.
+   *
+   * @return the make
+   */
   public String getMake() {
     return make;
   }
 
+  /**
+   * Sets make.
+   *
+   * @param make the make
+   */
   public void setMake(String make) {
     this.make = make;
   }
 
+  /**
+   * Gets model.
+   *
+   * @return the model
+   */
   public String getModel() {
     return model;
   }
 
+  /**
+   * Sets model.
+   *
+   * @param model the model
+   */
   public void setModel(String model) {
     this.model = model;
   }
 
+  /**
+   * Gets number of doors.
+   *
+   * @return the number of doors
+   */
   public int getNumberOfDoors() {
     return numberOfDoors;
   }
 
+  /**
+   * Sets number of doors.
+   *
+   * @param numberOfDoors the number of doors
+   */
   public void setNumberOfDoors(int numberOfDoors) {
     this.numberOfDoors = numberOfDoors;
   }
 
+  /**
+   * Gets number of seats.
+   *
+   * @return the number of seats
+   */
   public int getNumberOfSeats() {
     return numberOfSeats;
   }
 
+  /**
+   * Sets number of seats.
+   *
+   * @param numberOfSeats the number of seats
+   */
   public void setNumberOfSeats(int numberOfSeats) {
     this.numberOfSeats = numberOfSeats;
   }
 
+  /**
+   * Gets engine.
+   *
+   * @return the engine
+   */
   public Engine getEngine() {
     return engine;
   }
 
+  /**
+   * Sets engine.
+   *
+   * @param engine the engine
+   */
   public void setEngine(Engine engine) {
     this.engine = engine;
   }
